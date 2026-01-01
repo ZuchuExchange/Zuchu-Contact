@@ -7,10 +7,14 @@
   <!-- Font Awesome CDN for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-    body {
+    /* Ensure no scrolling and full viewport coverage */
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
-      height: 100vh;
+      overflow: hidden;
+    }
+    body {
       width: 100%;
       background-image: url('zuchucontact.png');
       background-size: cover;
@@ -18,7 +22,6 @@
       background-repeat: no-repeat;
       font-family: Arial, sans-serif;
       position: relative;
-      overflow: hidden;
     }
 
     /* Floating window styles */
@@ -113,7 +116,6 @@
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
-  <!-- Removed the reference link text -->
 </div>
 
 <div class="floating-window-top" id="topWindow">
